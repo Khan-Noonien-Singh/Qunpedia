@@ -1,10 +1,11 @@
 Qunpedia
 ========
 
-##What is it
+###What is Qunpedia
 
-Qunpedia is a wiki-system based on nodejs, mongodb and AngularJS. 
+Qunpedia should be a wiki-system with NodeJS & MongoDB at the backend and AngularJS at the frontend.
 
-##What to do with it
+###What can I do?
 
-I have no idea.... maybe a wiki?
+You could pull requests, clone or fork this project...
+
