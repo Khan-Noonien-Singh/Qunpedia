@@ -1,0 +1,8 @@
+{
+	"name": "Qunpedia",
+	"description": "Wiki-System with help of Node.js",
+	"author": "Luca Venier, Andreas Usdenski, Julia Grimm",
+	"dependencies" : {
+		"express": "3.x"		
+	}
+}
