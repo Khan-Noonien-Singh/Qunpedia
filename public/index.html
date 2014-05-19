@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
 
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -8,8 +8,48 @@
 </head>
 <body>
 	<header>	<!-- Headerbar/Title-->
-		<h1>What's up</h1>	
+		
+		<nav class="navbar navbar-inverse" role="navigation">
+  			<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#coll">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      	</button>
+			      <a class="navbar-brand" ui-sref="home">Brand</a>
+			    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    		<div class="collapse navbar-collapse" id="coll">
+			      	<ul class="nav navbar-nav">
+				        <li class="active"><a ui-sref="home">A link for something</a></li>
+				        <li><a ui-sref="home">Another inutile Link</a></li>        
+			      	</ul>
+		      		<form class="navbar-form navbar-left" role="search">
+		        		<div class="form-group">
+		          			<input type="text" class="form-control" placeholder="Search">
+		        		</div>
+		        		<button type="submit" class="btn btn-primary">Submit</button>
+		      		</form>
+				    <ul class="nav navbar-nav navbar-right">
+				        <li><a class="btn btn-success" ui-sref="/singin">Anmelden</a></li>
+				        <li><a class="btn btn-default" ui-sref="/register">Registrieren</a></li>
+				    </ul>
+	    		</div><!-- /.navbar-collapse -->
+	  		</div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="page-header">
+  			<h1>Qunpedia <small>by Qun Studios</small></h1>
+		</div>
+
 	</header>
+
+	<!-- ===================================== End of Header - Start of Content =====================================================-->
+
 	<div>		<!-- Example Div, to have some content-->
 		<p>Qunpedia: wiki with MEAN!</p>
         	<ul>
@@ -22,15 +62,22 @@
 	<div ui-view>	<!-- Div, where our content goes in-->
 		
 	</div>
-        <footer>	<!-- Footerbar-->
-        	<hr />
-        	<h6>&copy; Qun Studios, 2014</h6>
-        </footer>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	<!-- ===================================== End of Content - Start of Footer =====================================================-->
+
+    <footer>	<!-- Footerbar-->
+    	<hr />
+    	<h6>&copy; Qun Studios</h6>
+    </footer>
+
+    <!-- ===================================== End of Footer - Start of Including Scripts =====================================================-->
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 
 
 </body>
