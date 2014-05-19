@@ -7,16 +7,26 @@
 	<title>Qunpedia</title>
 </head>
 <body>
-
-	<h1>What's up</h1>
-        <p>Qunpedia: wiki with MEAN!</p>
-        <ul>
-        	<li>MongoDB</li>
-        	<li>ExpressJS</li>
-        	<li>AngularJS</li>
-        	<li>NodeJS</li>
-        </ul>
-
+	<header>	<!-- Headerbar/Title-->
+		<h1>What's up</h1>	
+	</header>
+	<div>		<!-- Example Div, to have some content-->
+		<p>Qunpedia: wiki with MEAN!</p>
+        	<ul>
+        		<li>MongoDB</li>
+        		<li>ExpressJS</li>
+        		<li>AngularJS</li>
+        		<li>NodeJS</li>
+        	</ul>	
+	</div>
+	<div ui-view>	<!-- Div, where our content goes in-->
+		
+	</div>
+        <footer>	<!-- Footerbar-->
+        	<hr />
+        	<h6>&copy; Qun Studios</h6>
+        </footer>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
